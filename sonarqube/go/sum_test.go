@@ -3,9 +3,7 @@ package main
 import "testing"
 
 func testSum(t *testing.T){
-	result := sum(10, 10)
-
-	if result != 20 {
-		t.Errorf("Expected 20, got %d", result)
+	if sum(10,10) != 20 {
+		t.Errorf("sum failed expect 20")
 	}
 }
